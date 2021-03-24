@@ -11,7 +11,8 @@ function App() {
 
 
   const addnewGoalTocomponent = (newGoal) => {
-    setCourseGoals(CourseGoals.concat(newGoal))
+    // setCourseGoals(CourseGoals.concat(newGoal))
+    setCourseGoals((prevsGoals) =>  prevsGoals.concat(newGoal));
   }
   return (
     <div className="course_goals">
